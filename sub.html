@@ -23,348 +23,319 @@
 <!-- [C] WRAPPER -->
 <div class="wrapper">
     <!-- [C] CONTAINER : 사진 업로드 -->
-    <div class="container container--sub subcont1">
-        <!-- [C] HEADER -->
+    <div class="container--sub subcont1">
+        <!-- [공통] HEADER -->
         <div class="sub-header">
             <h1 class="brand-logo"><a href="index.html">seventh generation</a></h1>
         </div>
-        <!-- // [C] HEADER -->
+        <!-- // [공통] HEADER -->
 
-        <!-- [C] SUB CONTENT -->
+        <!-- [공통] SUB CONTENT -->
         <div class="sub-content">
             <div class="ico-pencil"><!--색연필--></div>
-            
-            <!-- [S] SECTION : 사진 업로드 -->
-            <div class="section">
-                <div class="subcont_head">
-                    <div class="step-tit">
-                        <p class="tx_step tx_step1">STEP 1 미래 지킴이 사진 업로드</p>    
-                        <p class="tx_sub">페이지 하단 <strong>사진 업로드</strong>하기 버튼 클릭 후<br>미래 지킴이가 될 이쁜 우리 아기의 모습을 올려주세요!</p>
-                        <p class="tx_tip">사진 내 배경이 깔끔할 수록 더 이쁘게 꾸밀 수 가 있어요</p>
+
+            <div>
+                <!-- step 1 만 노출 -->
+                <div class="step1">
+                    <div class="section">
+                        <div class="subcont_head">
+                            <div class="step-tit">
+                                <p class="tx_step tx_step1">STEP 1 미래 지킴이 사진 업로드</p>    
+                                <p class="tx_sub">페이지 하단 <strong>사진 업로드</strong>하기 버튼 클릭 후<br>미래 지킴이가 될 이쁜 우리 아기의 모습을 올려주세요!</p>
+                                <p class="tx_tip">사진 내 배경이 깔끔할 수록 더 이쁘게 꾸밀 수 가 있어요</p>
+                            </div>
+                        </div>        
                     </div>
                 </div>
+                <!-- // -->
 
+                <!-- step 2 만 노출 -->
+                <div class="step2">
+                    <div class="section">
+                        <div class="subcont_head">
+                            <div class="step-tit">
+                                <p class="tx_step tx_step2">STEP 2 미래지킴이 그리기</p>    
+                                <p class="tx_sub">미래 지킴이 그림을 그릴 사진이 준비되었어요!<br>이제 화면을 <strong>클릭 or 터치</strong>해서 그림을 그려볼까요?</p>
+                                <p class="tx_tip">스티커기능으로 자유롭게 움직여서도 꾸며보세요!</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+                <!-- // -->
+                
+                <!-- step 3 만 노출 -->
+                <div class="step3">
+                    <div class="section">
+                        <div class="subcont_head">
+                            <div class="step-tit">
+                                <p class="tx_step tx_step3">STEP 3 내가 그린 미래지킴이 출동!</p>    
+                                <p class="tx_sub">보기만해도 지구와 우리의 미래가 밝아진 것 같아요!<br>이제 공유하기 버튼으로 인스타그램에 업로드하고<br><strong>소장각 이벤트 경품을 받으러 가볼까요?</strong></p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <!-- // -->
+            </div>
+
+            <div class="section">                
                 <div class="subcont_body">
-                    <div class="pframe">
-                        <p class="ico ico-balloon">엄마가 그린 우리아이</p>
-                        <p class="ico ico-wmark">GREEN 미래지킴이</p>
+                    <!-- step 2 만 노출 -->
+                    <div class="step2">
+                        <div class="controller">
+                            <ul class="tab__list">
+                                <li>
+                                    <button type="button" class="btn btn-pencle" onclick="$(this).hide().siblings('.btn').show();">연필</button>
+                                    <button type="button" class="btn btn-eraser" onclick="$(this).hide().siblings('.btn').show();">지우개</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-color" onclick="$(this).siblings('.dropdown').slideToggle();"><i class="oncolor" style="background-color:#ff8503"></i>색상</button>
 
+                                    <!-- 색상 목록 -->
+                                    <div class="dropdown">
+                                        <ul class="color__list">
+                                            <!-- 선택 : li.is-on-->
+                                            <li><button type="button" class="btn btn-color1" data-hash="#000">검정색</button></li>
+                                            <li><button type="button" class="btn btn-color2" data-hash="#fff">흰색</button></li>
+                                            <li><button type="button" class="btn btn-color3" data-hash="#ff1717">빨강색</button></li>
+                                            <li class="is-on"><button type="button" class="btn btn-color4" data-hash="#ff8503">주황색</button></li>
+                                            <li><button type="button" class="btn btn-color5" data-hash="#ffd50f">노랑색</button></li>
+                                            <li><button type="button" class="btn btn-color6" data-hash="#49df5a">초록색</button></li>
+                                            <li><button type="button" class="btn btn-color7" data-hash="#b5e818">연두색</button></li>
+                                            <li><button type="button" class="btn btn-color8" data-hash="#475dff">파랑색</button></li>
+                                            <li><button type="button" class="btn btn-color9" data-hash="#63cdff">하늘색</button></li>
+                                            <li><button type="button" class="btn btn-color10" data-hash="#9854ff">보라색</button></li>
+                                            <li><button type="button" class="btn btn-color11" data-hash="#35287b">남색</button></li>
+                                            <li><button type="button" class="btn btn-color12" data-hash="#ff7bc6">분홍색</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- // -->
+                                    <script>
+                                        // 색상 선택
+                                        $(".color__list li").on("click", function(){
+                                            var _this = $(this),
+                                                _color = _this.find(".btn").data("hash");
+                                            
+                                                console.log(_color)
+                                            _this.addClass("is-on").siblings("li").removeClass("is-on");
+                                            setTimeout(function(){
+                                                _this.closest('.dropdown').slideUp();
+                                                $(".oncolor").css({"background-color":_color});
+                                            },100);                                     
+                                        })
+                                    </script>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-border" onclick="$(this).siblings('.dropdown').slideToggle();"><i class="onborder grade-5"></i>두께</button>
+                                    <!-- 색상 목록 -->
+                                    <div class="dropdown">
+                                        <ul class="grade__list">
+                                            <!-- 선택 : li.is-on -->
+                                            <li><button type="button" class="btn btn-grade1" data-grade="1">1단계</button></li>
+                                            <li><button type="button" class="btn btn-grade2" data-grade="2">2단계</button></li>
+                                            <li><button type="button" class="btn btn-grade3" data-grade="3">3단계</button></li>
+                                            <li><button type="button" class="btn btn-grade4" data-grade="4">4단계</button></li>
+                                            <li class="is-on"><button type="button" class="btn btn-grade5" data-grade="5">5단계</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- // -->
+                                </li>
+                            </ul>
+                            
+                            <script>
+                                // 색상 두께
+                                $(".grade__list li").on("click", function(){
+                                    var _this = $(this),
+                                        _border = _this.find(".btn").data("grade")
+
+                                    _this.addClass("is-on").siblings("li").removeClass("is-on");
+                                    setTimeout(function(){
+                                        _this.closest('.dropdown').slideUp();
+                                        $(".onborder").attr({"class":"onborder grade-"+_border});
+                                    },100);                                     
+                                })
+                            </script>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- [공통] 포토 프레임 영역 -->
+                    <div class="pframe">
+                        <!-- step 1 만 노출 -->
+                        <div class="step1">
+                            <p class="ico ico-balloon">엄마가 그린 우리아이</p>
+                            <p class="ico ico-wmark">GREEN 미래지킴이</p>
+                        </div>
+                        <!-- // -->
+
+                        <!-- step 3 만 노출 -->
+                        <div class="step3">
+                            <p class="ico ico-giftbox">경품 박스</p>
+                        </div>
+                        <!-- // -->
+
+                        <!-- [공통] 단일 캔버스 : 모든 스텝 노출됨 -->
                         <div class="pframe__in">
                             <div class="dimmed"><p class="tx_exp">참여예시</p></div>
 
                             <canvas id="canvas" class="canvas-box"></canvas>
                         </div>
-                    </div>
+                        <!-- // [공통] 단일 캔버스 -->
 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-step btn-step-upload">사진 업로드하기</button>
+                        <!-- step 2 만 노출 -->
+                        <div class="step2">
+                            <div class="pframe__sticker">
+                                <button type="button" class="expand-toggle">열기/접기</button>
+                                <ul class="sticker__list">
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-1.png" alt="스티커1-1"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-2.png" alt="스티커1-2"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-3.png" alt="스티커1-3"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-4.png" alt="스티커1-4"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-5.png" alt="스티커1-5"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-1.png" alt="스티커2-1"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-2.png" alt="스티커2-2"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-3.png" alt="스티커2-3"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-4.png" alt="스티커2-4"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-5.png" alt="스티커2-5"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-1.png" alt="스티커3-1"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-2.png" alt="스티커3-2"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-3.png" alt="스티커3-3"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-4.png" alt="스티커3-4"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-5.png" alt="스티커3-5"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-1.png" alt="스티커4-1"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-2.png" alt="스티커4-2"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-3.png" alt="스티커4-3"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-4.png" alt="스티커4-4"></button></li>
+                                    <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-5.png" alt="스티커4-5"></button></li>
+                                </ul>
+                            </div>
+                            <script>
+                                var stickerEx = function(){
+                                    var isState = false,
+                                        stickers = $(".pframe__sticker"),
+                                        stickerExpand = $(".expand-toggle"),
+                                        stickerItem = $(".sticker__list .btn");
+
+                                    stickerExpand.on("click", function(){
+                                        var _this = $(this);
+
+                                        if(!isState){
+                                            _this.hide();
+                                            stickers.addClass("is-on");
+                                            isFolding = true;
+                                        }
+                                    })
+                                    stickerItem.on("click", function(){
+                                        var _this = $(this);
+
+                                            stickers.removeClass("is-on");
+                                            stickerExpand.show()
+                                            isFolding = false;
+                                    })
+                                }
+                                $(function(){
+                                    // INIT
+                                    var initFunc = function(){
+                                        stickerEx();
+                                    }
+                                    initFunc();
+                                })
+                            </script>
+                        </div>
+                        <!-- // -->
+
+                        <!-- step 3 만 노출 -->
+                        <div class="step3">
+                            <p class="tx_message">#나와_우리_지구를_위한_미래지킴이_완성!</p>
+                        </div>
+                        <!-- // -->
+                    </div>
+                    <!-- // [공통] 포토 프레임 영역 -->
+
+                    <div>
+                        <!-- step 1 만 노출 -->
+                        <div class="step1">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-step btn-step-upload" data-gostep="2">사진 업로드하기</button>
+                            </div>
+                        </div>
+                        <!-- // -->
+        
+                        <!-- step 2 만 노출 -->
+                        <div class="step2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-step btn-step-back" data-gostep="1">뒤로가기</button>
+                                <button type="button" class="btn btn-step btn-step-comp" data-gostep="3">미래지킴이 출동완료!</button>
+                            </div>
+                        </div>
+                        <!-- // -->
+        
+                        <!-- step 3 만 노출 -->
+                        <div class="step3">
+                            <div class="btn-group--share">
+                                <button type="button" class="btn btn-share btn-insta">인스타 공유하기</button>
+                                <button type="button" class="btn btn-share btn-kakao">카카오톡 공유하기</button>
+                            </div>
+        
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-step btn-step-back" data-gostep="2">뒤로가기</button>
+                                <a href="end.html" class="btn btn-step btn-step-buy">미래지킴이 필수템 구매</a>
+                            </div>
+                        </div>
+                        <!-- // -->
                     </div>
                 </div>
             </div>
-            <!-- // [S] SECTION : 사진 업로드 -->
-        </div>
-        <!-- // [C] SUB CONTENT -->
-    </div>
-    <!-- // [C] CONTAINER -->
 
-    <!-- [C] CONTAINER : 그리기 -->
-    <div class="container container--sub subcont2">
-        <!-- [C] HEADER -->
-        <div class="sub-header">
-            <h1 class="brand-logo"><a href="index.html">seventh generation</a></h1>
-        </div>
-        <!-- // [C] HEADER -->
+            <div>
+                <!-- step 3 만 노출 -->
+                <div class="step3">
+                    <div class="section">
+                        <div class="evtjoin_info">
+                            <p class="tx_tit">이벤트 참여방법</p>
 
-        <!-- [C] SUB CONTENT -->
-        <div class="sub-content">
-            <div class="ico-pencil"><!--색연필--></div>
-            
-             <!-- [S] SECTION : 그리기 -->
-             <div class="section subcont2">
-                <div class="subcont_head">
-                    <div class="step-tit">
-                        <p class="tx_step tx_step2">STEP 2 미래지킴이 그리기</p>    
-                        <p class="tx_sub">미래 지킴이 그림을 그릴 사진이 준비되었어요!<br>이제 화면을 <strong>클릭 or 터치</strong>해서 그림을 그려볼까요?</p>
-                        <p class="tx_tip">스티커기능으로 자유롭게 움직여서도 꾸며보세요!</p>
-                    </div>
-                </div>
-
-                <div class="subcont_body">
-                    
-                    <div class="controller">
-                        <ul class="tab__list">
-                            <li>
-                                <button type="button" class="btn btn-pencle" onclick="$(this).hide().siblings('.btn').show();">연필</button>
-                                <button type="button" class="btn btn-eraser" onclick="$(this).hide().siblings('.btn').show();">지우개</button>
-                            </li>
-                            <li>
-                                <button type="button" class="btn btn-color" onclick="$(this).siblings('.dropdown').slideToggle();"><i class="oncolor" style="background-color:#ff8503"></i>색상</button>
-
-                                <!-- 색상 목록 -->
-                                <div class="dropdown">
-                                    <ul class="color__list">
-                                        <!-- 선택 : li.is-on-->
-                                        <li><button type="button" class="btn btn-color1" data-hash="#000">검정색</button></li>
-                                        <li><button type="button" class="btn btn-color2" data-hash="#fff">흰색</button></li>
-                                        <li><button type="button" class="btn btn-color3" data-hash="#ff1717">빨강색</button></li>
-                                        <li class="is-on"><button type="button" class="btn btn-color4" data-hash="#ff8503">주황색</button></li>
-                                        <li><button type="button" class="btn btn-color5" data-hash="#ffd50f">노랑색</button></li>
-                                        <li><button type="button" class="btn btn-color6" data-hash="#49df5a">초록색</button></li>
-                                        <li><button type="button" class="btn btn-color7" data-hash="#b5e818">연두색</button></li>
-                                        <li><button type="button" class="btn btn-color8" data-hash="#475dff">파랑색</button></li>
-                                        <li><button type="button" class="btn btn-color9" data-hash="#63cdff">하늘색</button></li>
-                                        <li><button type="button" class="btn btn-color10" data-hash="#9854ff">보라색</button></li>
-                                        <li><button type="button" class="btn btn-color11" data-hash="#35287b">남색</button></li>
-                                        <li><button type="button" class="btn btn-color12" data-hash="#ff7bc6">분홍색</button></li>
-                                    </ul>
-                                </div>
-                                <!-- // -->
-                                <script>
-                                    // 색상 선택
-                                    $(".color__list li").on("click", function(){
-                                        var _this = $(this),
-                                            _color = _this.find(".btn").data("hash");
-                                        
-                                            console.log(_color)
-                                        _this.addClass("is-on").siblings("li").removeClass("is-on");
-                                        setTimeout(function(){
-                                            _this.closest('.dropdown').slideUp();
-                                            $(".oncolor").css({"background-color":_color});
-                                        },100);                                     
-                                    })
-                                </script>
-                            </li>
-                            <li>
-                                <button type="button" class="btn btn-border" onclick="$(this).siblings('.dropdown').slideToggle();"><i class="onborder grade-5"></i>두께</button>
-                                <!-- 색상 목록 -->
-                                <div class="dropdown">
-                                    <ul class="grade__list">
-                                        <!-- 선택 : li.is-on -->
-                                        <li><button type="button" class="btn btn-grade1" data-grade="1">1단계</button></li>
-                                        <li><button type="button" class="btn btn-grade2" data-grade="2">2단계</button></li>
-                                        <li><button type="button" class="btn btn-grade3" data-grade="3">3단계</button></li>
-                                        <li><button type="button" class="btn btn-grade4" data-grade="4">4단계</button></li>
-                                        <li class="is-on"><button type="button" class="btn btn-grade5" data-grade="5">5단계</button></li>
-                                    </ul>
-                                </div>
-                                <!-- // -->
-                            </li>
-                        </ul>
-                        
-                        <script>
-                            // 색상 두께
-                            $(".grade__list li").on("click", function(){
-                                var _this = $(this),
-                                    _border = _this.find(".btn").data("grade")
-
-                                _this.addClass("is-on").siblings("li").removeClass("is-on");
-                                setTimeout(function(){
-                                    _this.closest('.dropdown').slideUp();
-                                    $(".onborder").attr({"class":"onborder grade-"+_border});
-                                },100);                                     
-                            })
-                        </script>
-                    </div>
-                    <div class="pframe">
-                        <div class="pframe__in">
-                            <canvas id="canvas" class="canvas-box"></canvas>
-                        </div>
-
-                        <div class="pframe__sticker">
-                            <button type="button" class="expand-toggle">열기/접기</button>
-                            <ul class="sticker__list">
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-1.png" alt="스티커1-1"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-2.png" alt="스티커1-2"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-3.png" alt="스티커1-3"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-4.png" alt="스티커1-4"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/1-5.png" alt="스티커1-5"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-1.png" alt="스티커2-1"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-2.png" alt="스티커2-2"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-3.png" alt="스티커2-3"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-4.png" alt="스티커2-4"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/2-5.png" alt="스티커2-5"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-1.png" alt="스티커3-1"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-2.png" alt="스티커3-2"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-3.png" alt="스티커3-3"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-4.png" alt="스티커3-4"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/3-5.png" alt="스티커3-5"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-1.png" alt="스티커4-1"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-2.png" alt="스티커4-2"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-3.png" alt="스티커4-3"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-4.png" alt="스티커4-4"></button></li>
-                                <li><button type="button" class="btn"><img src="./apps/imgs/sticker/4-5.png" alt="스티커4-5"></button></li>
+                            <ul class="info__list">
+                                <li><strong>본인 계정</strong>의 인스타그램으로 게시물 업로드 준비</li>
+                                <li>우리아이에게 미래에 하고 싶은 이야기를 작성</li>
+                                <li><strong>필수 해시태그 2가지</strong>와 함께 완성된 이미지를 업로드<br>
+                                    <p class="tx_noti">* 이벤트 관련 상세내용은 세븐스제너레이션 공식 인스타그램<br>(<a href="#">@seventhgeneration__korea</a>)및 하단 안내사항 문구를 확인해주세요!</p>
+                                </li>
                             </ul>
                         </div>
-                        <script>
-                            var stickerEx = function(){
-                                var isState = false,
-                                    stickers = $(".pframe__sticker"),
-                                    stickerExpand = $(".expand-toggle"),
-                                    stickerItem = $(".sticker__list .btn");
 
-                                stickerExpand.on("click", function(){
-                                    var _this = $(this);
-
-                                    if(!isState){
-                                        _this.hide();
-                                        stickers.addClass("is-on");
-                                        isFolding = true;
-                                    }
-                                })
-                                stickerItem.on("click", function(){
-                                    var _this = $(this);
-
-                                        stickers.removeClass("is-on");
-                                        stickerExpand.show()
-                                        isFolding = false;
-                                })
-                            }
-                            $(function(){
-                                // INIT
-                                var initFunc = function(){
-                                    stickerEx();
-                                }
-                                initFunc();
-                            })
-                        </script>
-                    </div>
-                    
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-step btn-step-back">뒤로가기</button>
-                        <button type="button" class="btn btn-step btn-step-comp">미래지킴이 출동완료!</button>
-                    </div>
-                </div>
-            </div>
-            <!-- // [S] SECTION : 그리기 -->
-        </div>
-        <!-- // [C] SUB CONTENT -->
-    </div>
-    <!-- // [C] CONTAINER : 그리기  -->
-
-    <!-- [C] CONTAINER : 완성! -->
-    <div class="container container--sub subcont3">
-        <!-- [C] HEADER -->
-        <div class="sub-header">
-            <h1 class="brand-logo"><a href="index.html">seventh generation</a></h1>
-        </div>
-        <!-- // [C] HEADER -->
-
-        <!-- [C] SUB CONTENT -->
-        <div class="sub-content">
-            <div class="ico-pencil"><!--색연필--></div>
-
-            <!-- [S] SECTION : 완성! -->
-            <div class="section">
-                <div class="subcont_head">
-                    <div class="step-tit">
-                        <p class="tx_step tx_step3">STEP 3 내가 그린 미래지킴이 출동!</p>    
-                        <p class="tx_sub">보기만해도 지구와 우리의 미래가 밝아진 것 같아요!<br>이제 공유하기 버튼으로 인스타그램에 업로드하고<br><strong>소장각 이벤트 경품을 받으러 가볼까요?</strong></p>
-                    </div>
-                </div>
-
-                <div class="subcont_body">
-                    <div class="pframe">
-                        <p class="ico ico-giftbox">경품 박스</p>
-
-                        <div class="pframe__in">
-                            <div class="dimmed"><p class="tx_exp">참여예시</p></div>
-
-                            <canvas id="canvas" class="canvas-box"></canvas>
+                        <div class="evt_notice">
+                            <p class="note_tit">유의사항 및 이미지 저장 방법</p>
+                            <div class="note_list">
+                                <ul>
+                                    <li>- 아이폰 (ios) 사용자 분들은 완성된 이미지를 꾹 눌러<br>이미지를 다운로드 해주시면 사진첩에 저장됩니다!</li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <p class="tx_message">#나와_우리_지구를_위한_미래지킴이_완성!</p>
-
-                        <script>
-                            $(function(){
-                                //  컨텐츠 2 스와이퍼 생성
-                                var icoSwiper = new Swiper(".icoSwiper", {
-                                    effect: "slide",
-                                    slidesPerView: 4,
-                                    spaceBetween: 9,
-                                    loop: true,
-                                    grabCursor: true,
-                                    navigation: {
-                                        prevEl: ".swiper-arr-prev",
-                                        nextEl: ".swiper-arr-next",
-                                    },                                    
-                                });
-                            })
-
-                        </script>
-                    </div>
-                    
-                    <div class="btn-group--share">
-                        <button type="button" class="btn btn-share btn-insta">인스타 공유하기</button>
-                        <button type="button" class="btn btn-share btn-kakao">카카오톡 공유하기</button>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-step btn-step-back">뒤로가기</button>
-                        <a href="end.html" class="btn btn-step btn-step-buy">미래지킴이 필수템 구매</a>
                     </div>
                 </div>
-
-                <div class="evtjoin_info">
-                    <p class="tx_tit">이벤트 참여방법</p>
-
-                    <ul class="info__list">
-                        <li><strong>본인 계정</strong>의 인스타그램으로 게시물 업로드 준비</li>
-                        <li>우리아이에게 미래에 하고 싶은 이야기를 작성</li>
-                        <li><strong>필수 해시태그 2가지</strong>와 함께 완성된 이미지를 업로드<br>
-                            <p class="tx_noti">* 이벤트 관련 상세내용은 세븐스제너레이션 공식 인스타그램<br>(<a href="#">@seventhgeneration__korea</a>)및 하단 안내사항 문구를 확인해주세요!</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="evt_notice">
-                    <p class="note_tit">유의사항 및 이미지 저장 방법</p>
-                    <div class="note_list">
-                        <ul>
-                            <li>- 아이폰 (ios) 사용자 분들은 완성된 이미지를 꾹 눌러<br>이미지를 다운로드 해주시면 사진첩에 저장됩니다!</li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- // -->
             </div>
-            <!-- // [S] SECTION : 완성! -->
-
+            
         </div>
-        <!-- // [C] SUB CONTENT -->
+        <!-- // [공통] SUB CONTENT -->
     </div>
-    <!-- // [C] CONTAINER : 완성! -->
+    <!-- // [C] CONTAINER -->
 </div>
 <!-- // [C] WRAPPER -->
 
 
 <script>
-    // 상단 타이틀 등장 모션
-    var visualLoad = function(){
-        var $visual = $(".header");
-        $visual.addClass("intro");
-        setTimeout(function(){
-            $visual.addClass("end");
-        },100)
-    }
-    $(window).on({
-        "load" : visualLoad
-    })
-
     $(function(){
-        var containerHeight = $(".container--sub"); // 각 탭별 클래스 적용
+        var containerBox = $(".container--sub"), // 서브 컨테이너
+            $btnStepMove = $(".btn-step"); // 스텝이동 버튼
 
-        // step2 이동
-        $(".btn-step-upload").on("click", function(){
-            $(this).closest(".container--sub").fadeOut(500, function(){
-                $(".subcont2").fadeIn(500)
-                $('html, body').stop().animate({scrollTop: $('body').offset().top}, 500);
-            })
-        })
-        // step3 이동
-        $(".btn-step-comp").on("click", function(){
-            $(this).closest(".container--sub").fadeOut(500, function(){
-                $(".subcont3").fadeIn(500)
-                $('html, body').stop().animate({scrollTop: $('body').offset().top}, 500);
-            })
+        $btnStepMove.on("click", function(){
+            var _this = $(this),
+                stepNum = _this.data("gostep"); // 이동할 스텝 번호
+                
+            if(stepNum != undefined){
+                containerBox.attr({"class": "container--sub subcont"+stepNum})
+                $('html, body').stop().animate({scrollTop: $('.pframe').offset().top - 100}, 500);
+            }
         })
     })
 </script>

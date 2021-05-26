@@ -129,21 +129,26 @@
 
 /* 메인 컨텐츠4 */ 
 .cont4 {width:100%;background:#62c441}
-.cont4 .evt_notice {padding:3.6rem 6.4rem 10rem;font-family:"Noto Sans Korean","맑은 고딕","Malgun Gothic","Apple SD Gothic Neo","돋움",dotum,sans-serif}
-.cont4 .evt_notice .note_tit {position:relative;margin-bottom:2.8rem;padding-left:4.4rem;font-weight:600;font-size:3.5rem;line-height:4.1rem;color:#9fe986}
+.cont4 .evt_notice {padding:3.6rem 6.4rem 10rem}
+.cont4 .evt_notice .note_tit {position:relative;margin-bottom:2.8rem;padding-left:4.4rem;font-weight:200;font-size:3.5rem;line-height:4.1rem;color:#9fe986}
 .cont4 .evt_notice .note_tit:before {content:"";position:absolute;top:.5rem;left:0;width:3.3rem;height:3.3rem;background:url(../imgs/ico-i.png) 50% 50% no-repeat;background-size:3.3rem}
-.cont4 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:500;color:#a9eb95;letter-spacing:-.4px;line-height:5.2rem}
+.cont4 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:100;color:#a9eb95;letter-spacing:-.4px;line-height:5.2rem}
 
 
 
 /* 체험 페이지 */
-.container--sub {display:block;}
-.container--sub .section {position:absolute;top:0;left:50%;width:75rem;transform:translateX(-50%)}
+.container--sub {display:block;transition:all .3s ease-in-out}
+.container--sub .section {width:75rem;margin:0 auto}
 .container--sub.subcont1 {height:175.3rem;background:url(../imgs/sub-bg1.png) top center no-repeat;background-size:192rem}
 .container--sub.subcont2 {height:179.8rem;background:url(../imgs/sub-bg2.png) top center no-repeat;background-size:192rem}
 .container--sub.subcont3 {height:262.7rem;background:url(../imgs/sub-bg3.png) top center no-repeat;background-size:192rem}
-.container--sub.subcont2,
-.container--sub.subcont3 {display:none}
+
+.container--sub .step1,
+.container--sub .step2,
+.container--sub .step3 {display:none}
+.container--sub.subcont1 .step1,
+.container--sub.subcont2 .step2,
+.container--sub.subcont3 .step3 {display:block}
 
 /* SUB HEADER */
 .sub-header {overflow:hidden;position:relative;width:100%;}
@@ -253,7 +258,7 @@
 .subcont_body .pframe__sticker.is-on {height:auto;margin:0 0 0 -.7rem;background:#fff}
 .subcont_body .pframe__sticker.is-on .sticker__list li:nth-child(n+6) {display:block}
 
-.evtjoin_info {clear:both;margin-bottom:11.5rem}
+.evtjoin_info {clear:both;max-width:75rem;margin:0 auto 11.5rem}
 .evtjoin_info .tx_tit {display:block;width:35.6rem;height:9.8rem;margin:0 auto 2rem;padding-top:2rem;font-size:0;text-indent:-9999px;background:url(../imgs/evtjoin-tit.png) 50% 2rem no-repeat;background-size:35.6rem}
 .evtjoin_info .info__list {padding-left:4rem}
 .evtjoin_info .info__list > li {position:relative;min-height:4rem;padding:1.4rem 0;padding-left:5rem;font-weight:100;font-size:2.8rem;letter-spacing:-1px;line-height:4rem;color:#67685a}
@@ -261,10 +266,10 @@
 .evtjoin_info .info__list > li strong {font-weight:400}
 .evtjoin_info .info__list > li .tx_noti {display:block;margin-top:1rem;font-weight:100;font-size:1.8rem;line-height:2.6rem}
 
-.subcont3 .evt_notice {padding:5rem 6.4rem;font-family:"Noto Sans Korean","맑은 고딕","Malgun Gothic","Apple SD Gothic Neo","돋움",dotum,sans-serif}
-.subcont3 .evt_notice .note_tit {position:relative;margin-bottom:3.2rem;padding-left:4.4rem;font-weight:600;font-size:3.5rem;line-height:4.1rem;color:#dadad9}
+.subcont3 .evt_notice {padding:5rem 6.4rem;}
+.subcont3 .evt_notice .note_tit {position:relative;margin-bottom:3.2rem;padding-left:4.4rem;font-weight:200;font-size:3.5rem;line-height:4.1rem;color:#dadad9}
 .subcont3 .evt_notice .note_tit:before {content:"";position:absolute;top:.5rem;left:0;width:3.3rem;height:3.3rem;background:url(../imgs/ico-i-gray.png) 50% 50% no-repeat;background-size:3.3rem}
-.subcont3 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:500;color:#c6c5c4;letter-spacing:-.4px;line-height:4.2rem}
+.subcont3 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:100;color:#c6c5c4;letter-spacing:-.4px;line-height:4.2rem}
 
 /* 엔딩 */
 .container--end {display:block;width:192rem;height:175.3rem;background:url(../imgs/end-bg.png) top center no-repeat;background-size:192rem}
@@ -341,30 +346,3 @@
 @media (max-width:320px){ 
     html {font-size:4px}
 }
-/* 
-@media (max-width:750px){
-    .container {min-width:320px;width:100%}
-    .inner {width:calc(100% - 15px);margin:0 auto;}
-    .btn {transition:all .3s ease-in-out}
-    .btn:hover {opacity:.8}
-
-    / * HEADER * /
-    .header {height:auto;background:url(../imgs/visual-bg.png) top center no-repeat;background-size:960px}
-    .header .brand-logo {width:70px;height:60px;margin:35px auto;background:url(../imgs/brand-logo.png) top center no-repeat;background-size:70px}
-
-    .visual .visual-sub {display:block;position:relative;left:17px;text-align:center;margin:175px auto 20px;font-size:16px;font-weight:200;letter-spacing:-.5px;color:#67685a;line-height:1;}
-    .visual .visual-sub > em {font-weight:400;}
-    .visual .visual-tit {display:block;position:relative;left:50px;width:717px;height:271px;margin:0 auto;font-size:0;text-indent:-9999px;background:url(../imgs/visual-tit.png) top center no-repeat}
-    .visual .visual-obj {position:relative;width:100%}
-    .visual .visual-obj .obj-lt .obj-photo {display:block;position:absolute;top:-174px;left:calc(50% - 732px);width:357px;height:382px;background:url(../imgs/visual-lt-photo.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-lt .obj-heart {display:block;position:absolute;top:-104px;left:calc(50% - 776px);width:350px;height:359px;background:url(../imgs/visual-lt-obj1.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-lt .obj-pen {display:block;position:absolute;top:332px;left:calc(50% - 680px);width:293px;height:219px;background:url(../imgs/visual-lt-obj2.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-ct {display:block;position:absolute;top:-134px;left:calc(50% - 510px);z-index:0;;width:1016px;height:946px;background:url(../imgs/visual-ct-photo.png) top center no-repeat}
-    .visual .visual-obj .obj-rt .obj-cloud {display:block;position:absolute;top:-66px;right:calc(50% - 840px);width:225px;height:127px;background:url(../imgs/visual-rt-obj1.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-rt .obj-earth {display:block;position:absolute;top:0;right:calc(50% - 524px);width:142px;height:154px;background:url(../imgs/visual-rt-earth.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-rt .obj-photo {display:block;position:absolute;top:280px;right:calc(50% - 776px);width:389px;height:374px;background:url(../imgs/visual-rt-photo.png) 50% 50% no-repeat}
-    .visual .visual-obj .obj-rt .obj-owl {display:block;position:absolute;top:442px;right:calc(50% - 776px);width:134px;height:155px;background:url(../imgs/visual-rt-owl.png) 50% 50% no-repeat}
-    .visual .tx_sub {position:relative;z-index:1;margin-top:590px;margin-bottom:8px;font-weight:100;font-size:26px;color:#67685a;line-height:42px;letter-spacing:-1px;text-align:center}
-    .visual .tx_sub em {font-weight:300;}
-    .visual .btn-join {display:block;width:644px;height:302px;margin:0 auto;font-size:0;text-indent:-9999px;background:url(../imgs/visual-btn-join.png) top center no-repeat}
-} */
