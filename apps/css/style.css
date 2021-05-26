@@ -12,7 +12,6 @@
 .header .brand-logo {display:block;width:14rem;height:12rem;margin:7rem auto;font-size:0;text-indent:-9999px;background:url(../imgs/brand-logo.png) top center no-repeat;background-size:14rem}
 .header .brand-logo > a {display:block;width:100%;height:100%;}
 
-.visual {}
 .visual .visual-sub {display:block;position:relative;left:1.7rem;text-align:center;margin:17.5rem auto 2rem;font-size:3.1rem;font-weight:200;letter-spacing:-.5px;color:#67685a;line-height:1;}
 .visual .visual-sub > em {font-weight:400;}
 .visual .visual-tit {display:block;position:relative;left:5rem;width:71.7rem;height:27.1rem;margin:0 auto;font-size:0;text-indent:-9999px;background:url(../imgs/visual-tit.png) top center no-repeat;background-size:71.7rem}
@@ -68,7 +67,7 @@
 .cont1 {overflow:hidden;clear:both;width:100%;height:85.6rem;background:url(../imgs/cont1-bg.png) bottom center no-repeat;background-size:192rem}
 .cont1 .cont_head {padding-top:7.4rem}
 .cont1 .cont_head .ico-cloud {display:block;width:13.2rem;height:6.3rem;margin:0 auto 3rem;background:url(../imgs/cont1-obj-cloud.png) 50% 50% no-repeat;background-size:13.2rem}
-.cont1 .cont_head .ico-bear {display:block;position:absolute;top:-2.7rem;left:calc(50% - 83.5rem);width:40.9rem;height:44.4rem;margin:0 auto 3rem;background:url(../imgs/cont1-obj-bear.png) 50% 50% no-repeat;background-size:}
+.cont1 .cont_head .ico-bear {display:block;position:absolute;top:-2.7rem;left:calc(50% - 83.5rem);width:40.9rem;height:44.4rem;margin:0 auto 3rem;background:url(../imgs/cont1-obj-bear.png) 50% 50% no-repeat;background-size:40.9rem}
 .cont1 .cont_head .tx_tit {display:block;width:38.1rem;height:9.8rem;margin:0 auto 6.6rem;font-size:0;text-indent:-9999px;background:url(../imgs/cont1-tit.png) 50% 50% no-repeat;background-size:38.1rem}
 .cont1 .evt_info {position:relative;width:67rem;margin:0 auto;}
 .cont1 .evt_info:after {content:"";position:absolute;top:-11.5rem;right:-2.4rem;width:13.7rem;height:14.2rem;background:url(../imgs/cont1-obj-bird.png) 50% 50% no-repeat;background-size:13.7rem}
@@ -110,11 +109,7 @@
 .frame__list .frame.frame .ico-bear {top:-7.8rem;right:-9rem;width:15.2rem;height:24.2rem;background:url(../imgs/frame/bg-frame10-ico.png) 50% 50% no-repeat;background-size:15.2rem}
 
 .scrollrange.swiper-pagination-progressbar {display:block;position:absolute;bottom:6rem;left:50%;width:42.8rem;height:.7rem;margin-left:-21.4rem;border-radius:.35rem;background-color:#aaddda}
-.scrollrange.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {}
 .scrollrange.swiper-pagination-progressbar .swiper-pagination-progressbar-fill:after {content:"";display:block;transform:scaleX(1) !important;position:absolute;top:-1.6rem;right:0;width:3.8rem;height:3.8rem;border-radius:100%;font-size:0;text-indent:-9999px;box-shadow:2px 0px 20px rgba(47, 105, 101, 27%);background-color:#fff}
-/* .scrollrange {display:block;position:absolute;bottom:60px;left:50%;width:428px;height:38px;margin-left:-214px;}
-.scrollrange > div {width:100%;height:7px;border-radius:3.5px;background-color:#aaddda}
-.scrollrange > div .btn-thumb {display:block;position:absolute;top:-16px;width:38px;height:38px;border-radius:100%;font-size:0;text-indent:-9999px;box-shadow:2px 0px 20px rgba(47, 105, 101, 27%);background-color:#fff} */
 
 /* 메인 컨텐츠3 */ 
 .cont3 {overflow:hidden;clear:both;width:100%;background:url(../imgs/cont3-bg.png) bottom center no-repeat;background-size:192rem}
@@ -176,7 +171,7 @@
 .subcont_body .pframe .pframe__in {display:block;position:relative;width:100%;height:100%;box-shadow:inset 1px 0 1rem rgb(125 148 146 / 35%);background:#b3e7e4 url(../imgs/pframe/p_img-bg.png) 50% 50% no-repeat;background-size:cover}
 .subcont_body .pframe .pframe__in .dimmed {display:block;position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;background-color:rgba(0,0,0, .5)}
 .subcont_body .pframe .pframe__in .dimmed .tx_exp {display:block;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:15rem;height:5.5rem;font-size:0;text-indent:-9999px;background:url(../imgs/pframe_exp.png) 50% 50% no-repeat;background-size:15rem}
-.subcont_body .pframe .pframe__in > img {width:100%;height:100%;vertical-align:top}
+.subcont_body .pframe .pframe__in img {width:100%;height:100%;vertical-align:top}
 .subcont_body .pframe .pframe__in .canvas-box {width:57.1rem;height:57.1rem;background:#b3e7e4 url(../imgs/frame/p_img-bg.png) 50% 50% no-repeat;background-size:cover}
 .subcont_body .pframe .tx_message {width:51.6rem;height:6.8rem;margin:2.7rem auto 0;font-size:0;text-indent:-9999px;background:url(../imgs/tx_message_comp.png) 50% 50% no-repeat;background-size:51.6rem}
 .subcont_body .pframe .ico {display:block;position:absolute;z-index:3;font-size:0;text-indent:-9999px}
@@ -187,7 +182,10 @@
 .subcont_body .btn-group {width:62rem;margin:6.4rem auto}
 .subcont_body .btn-group:after {content:"";display:table;clear:both}
 .subcont_body .btn-step {display:block;font-size:0;text-indent:-9999px;}
-.subcont_body .btn-step-upload {width:100%;height:11.8rem;background:url(../imgs/btn-upload.png) 50% 50% no-repeat;background-size:56.2rem}
+.subcont_body .btn-step-upload {float:left;width:29.2rem;height:11.8rem}
+.subcont_body .btn-step-upload label {display:block;width:100%;height:100%;font-size:0;text-indent:-9999px;background:url(../imgs/btn-back.png) 50% 50% no-repeat;background-size:29.2rem;cursor:pointer}
+.subcont_body .btn-step-upload label + input[type="file"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.subcont_body .btn-step-next {float:right;width:29.2rem;height:11.8rem;background:url(../imgs/btn-back.png) 50% 50% no-repeat;background-size:29.2rem}
 .subcont_body .btn-step-back {float:left;width:29.2rem;height:11.8rem;background:url(../imgs/btn-back.png) 50% 50% no-repeat;background-size:29.2rem}
 .subcont_body .btn-step-comp {float:right;width:29.2rem;height:11.8rem;background:url(../imgs/btn-comp.png) 50% 50% no-repeat;background-size:29.2rem}
 .subcont_body .btn-step-buy {float:right;width:29.2rem;height:11.8rem;background:url(../imgs/btn-buy.png) 50% 50% no-repeat;background-size:29.2rem}
@@ -211,6 +209,7 @@
 .controller .tab__list > li> .btn-eraser {display:none;background-position:-18rem -6.5rem;}
 /* .controller .tab__list > li> .btn-eraser:hover {background-position:0 0;} */
 .controller .tab__list > li> .btn-color {background-position:-36rem 0;}
+.controller .tab__list > li> .btn-color.is-on {background-position:-36rem -6.5rem}
 .controller .tab__list > li> .btn-color .oncolor {display:block;position:absolute;top:1.4rem;left:2.8rem;width:3.9rem;height:3.9rem;box-sizing:border-box;border-radius:100%;border:1px solid #202a29}
 .controller .tab__list > li> .btn-border {background-position:-54rem -0;}
 .controller .tab__list > li> .btn-border .onborder {display:block;position:absolute;top:2.2rem;left:3.7rem;width:2rem;height:2rem;background:url(../imgs/tab-sprite.png) 0 -24.8rem no-repeat;background-size:108rem}
@@ -310,9 +309,9 @@
 .lay-sticky .lay-inner a>img {width:100%;height:100%;vertical-align:top}
 .lay-sticky .lay-inner .btn-cls {position:absolute;top:0;left:0;width:6rem;height:6rem;font-size:0;text-indent:-9999px;background:transparent}
 
-.lay-note {display:none;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1000;}
+.lay-note {display:none;overflow-x:hidden;overflow-y:auto;position:fixed;top:0;bottom:0;left:0;right:-1.7rem;z-index:1000;outline:0}
 .lay-note .dimmed {content:"";position:fixed;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,.5);z-index:1}
-.lay-note .lay-inner {position:absolute;top:157rem;left:50%;width:69rem;height:135.5rem;transform:translateX(-50%);z-index:10;background:url(../imgs/lay-note-bg.png) top center no-repeat;background-size:69rem}
+.lay-note .lay-inner {position:absolute;top:50%;left:50%;width:69rem;height:135.5rem;transform:translate(-50%, -25rem);z-index:10;background:url(../imgs/lay-note-bg.png) top center no-repeat;background-size:69rem}
 .lay-note .lay-inner .btn-cls {position:absolute;top:-7rem;right:0;width:3.9rem;height:3.8rem;font-size:0;text-indent:-9999px;background:url(../imgs/lay-note-cls.png) 50% 50% no-repeat;background-size:3.9rem}
 .lay-note .lay-head {padding-top:12rem;text-align:center}
 .lay-note .lay-head .tx_sub {display:block;font-weight:100;font-size:2.4rem;letter-spacing:-.15px;line-height:4rem;color:#67685a}

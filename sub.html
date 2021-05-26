@@ -121,7 +121,7 @@
                                                 _this.closest('.dropdown').slideUp();
                                                 $(".oncolor").css({"background-color":_color});
                                             },100);                                     
-                                        })
+                                        })                                        
                                     </script>
                                 </li>
                                 <li>
@@ -177,7 +177,15 @@
                         <div class="pframe__in">
                             <div class="dimmed"><p class="tx_exp">참여예시</p></div>
 
-                            <canvas id="canvas" class="canvas-box"></canvas>
+                            <div class="step1">
+                                <img src="./apps/imgs/pframe_img.png" class="canvas-img" alt="참여예시 이미지">
+                            </div>
+                            <div class="step2">
+                                <canvas id="canvas" class="canvas-box"></canvas>
+                            </div>
+                            <div class="step3">
+                                <img src="./apps/imgs/pframe_img.png" class="result-img" alt="결과 이미지">
+                            </div>
                         </div>
                         <!-- // [공통] 단일 캔버스 -->
 
@@ -255,7 +263,11 @@
                         <!-- step 1 만 노출 -->
                         <div class="step1">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-step btn-step-upload" data-gostep="2">사진 업로드하기</button>
+                                <div class="btn btn-step-upload">
+                                    <label for="up_file">사진 업로드하기</label>
+                                    <input type="file" id="up_file">
+                                </div>
+                                <button type="button" class="btn btn-step btn-step-next" data-gostep="2">다음 스텝</button>
                             </div>
                         </div>
                         <!-- // -->

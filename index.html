@@ -58,7 +58,7 @@
                     </p>
 
                     <div class="btn-join">
-                        <button type="button" class="btn btn-layopen" onclick="$('.lay-note').fadeIn();">지금 이벤트 참여하러가기</button>
+                        <button type="button" class="btn btn-layopen">지금 이벤트 참여하러가기</button>
                     </div>
                 </div>
             </div>
@@ -436,12 +436,12 @@
 <div class="lay-sticky">
     <div class="lay-inner">
         <a href="#"><img src="./apps/imgs/popup_img.png" alt="살결지킴이 기저귀 구매하러가기" /></a>
-        <button type="button" class="btn btn-cls" onclick="$(this).closest('.lay-pop').fadeOut();">닫기</button>
+        <button type="button" class="btn btn-cls" onclick="$(this).closest('.lay-sticky').fadeOut();">닫기</button>
     </div>
 </div>
 
 <div class="lay-note">
-    <div class="dimmed" onclick="$(this).closest('.lay-note').fadeOut();"></div>
+    <div class="dimmed"></div>
 
     <div class="lay-inner">
 
@@ -459,7 +459,7 @@
             </div>
         </div>
         
-        <button type="button" class="btn btn-cls" onclick="$(this).closest('.lay-note').fadeOut();">닫기</button>
+        <button type="button" class="btn btn-cls">닫기</button>
     </div>
 </div>
 <!-- // [C] LAYER -->
@@ -467,6 +467,18 @@
 
 <script>
     $(function(){
+        // 참여 레이어 
+        $(".btn-layopen").on("click", function(){
+            $("body").css({"overflow":"hidden","padding-right":"17px"})
+
+            $(".lay-note").fadeIn();
+
+            $(".lay-note .dimmed, .lay-note .btn-cls").on("click", function(){
+                $(".lay-note").fadeOut();
+                $("body").removeAttr("style")
+            })
+        })
+
         //  하단 슬라이드 스와이퍼 생성
         var swiper = new Swiper(".flickSwiper", {
             effect: "slide",
@@ -489,7 +501,10 @@
             },
             on:{
                 slideChangeTransitionEnd: function(s){
-                    this.autoplay.start()
+                    // 수동 조작 후 10초 뒤 자동 재생
+                    setTimeout(function(){
+                        swiper.autoplay.start()
+                    },10000);
                 },
             }
             
