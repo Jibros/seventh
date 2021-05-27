@@ -63,7 +63,7 @@
 
 .content {position:relative}
 
-/* 메인 컨텐츠1 */ 
+/* 메인 컨텐츠1 */
 .cont1 {overflow:hidden;clear:both;width:100%;height:85.6rem;background:url(../imgs/cont1-bg.png) bottom center no-repeat;background-size:192rem}
 .cont1 .cont_head {padding-top:7.4rem}
 .cont1 .cont_head .ico-cloud {display:block;width:13.2rem;height:6.3rem;margin:0 auto 3rem;background:url(../imgs/cont1-obj-cloud.png) 50% 50% no-repeat;background-size:13.2rem}
@@ -74,7 +74,7 @@
 .cont1 .evt_info .ico-heart {display:block;position:absolute;bottom:-16rem;left:calc(50% - 28.9rem);width:11.1rem;height:9.5rem;background:url(../imgs/cont1-obj-heart.png) 50% 50% no-repeat;background-size:11.1rem}
 .cont1 .evt_info .steps {overflow:hidden;width:100%;height:26rem;font-size:0;text-indent:-9999px;background:url(../imgs/cont1-steps.png) top center no-repeat;background-size:67rem}
 
-/* 메인 컨텐츠2 */ 
+/* 메인 컨텐츠2 */
 .cont2 {position:relative;width:100%;height:129.8rem;background:#ebf9f8 url(../imgs/cont2-bg.png) bottom center no-repeat;background-size:192rem}
 .cont2 .cont_head {position:relative;z-index:10;margin-bottom:7.4rem;padding-top:0}
 .cont2 .cont_head .ico-cloud {display:block;width:12.9rem;height:6.1rem;margin:0 auto 3rem;background:url(../imgs/cont2-obj-cloud.png) 50% 50% no-repeat;background-size:12.9rem}
@@ -112,7 +112,7 @@
 .scrollrange.swiper-pagination-progressbar {display:block;position:absolute;bottom:6rem;left:50%;width:42.8rem;height:.7rem;margin-left:-21.4rem;border-radius:.35rem;background-color:#aaddda}
 .scrollrange.swiper-pagination-progressbar .swiper-pagination-progressbar-fill:after {content:"";display:block;transform:scaleX(1) !important;position:absolute;top:-1.6rem;right:0;width:3.8rem;height:3.8rem;border-radius:100%;font-size:0;text-indent:-9999px;box-shadow:2px 0px 20px rgba(47, 105, 101, 27%);background-color:#fff}
 
-/* 메인 컨텐츠3 */ 
+/* 메인 컨텐츠3 */
 .cont3 {overflow:hidden;clear:both;width:100%;background:url(../imgs/cont3-bg.png) bottom center no-repeat;background-size:192rem}
 .cont3 .cont_head .ico-cloud {display:block;width:13.2rem;height:6.3rem;margin:0 auto 3rem;background:url(../imgs/cont1-obj-cloud.png) 50% 50% no-repeat;background-size:13.2rem}
 .cont3 .cont_head .tx_tit {display:block;width:60.8rem;height:5.4rem;margin:0 auto 6.6rem;font-size:0;text-indent:-9999px;background:url(../imgs/cont3-tit.png) 50% 50% no-repeat;background-size:60.8rem}
@@ -123,12 +123,15 @@
 .cont3 .cont_body .tx_tit {font-weight:100;font-size:2.8rem;letter-spacing:-1px;line-height:4.9rem;color:#2aaaa4;}
 .cont3 .cont_body .tx_tit strong {font-weight:400;font-size:3.6rem}
 
-/* 메인 컨텐츠4 */ 
+/* 메인 컨텐츠4 */
 .cont4 {width:100%;background:#62c441}
 .cont4 .evt_notice {padding:3.6rem 6.4rem 10rem}
 .cont4 .evt_notice .note_tit {position:relative;margin-bottom:2.8rem;padding-left:4.4rem;font-weight:200;font-size:3.5rem;line-height:4.1rem;color:#9fe986}
 .cont4 .evt_notice .note_tit:before {content:"";position:absolute;top:.5rem;left:0;width:3.3rem;height:3.3rem;background:url(../imgs/ico-i.png) 50% 50% no-repeat;background-size:3.3rem}
-.cont4 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:100;color:#a9eb95;letter-spacing:-.4px;line-height:5.2rem}
+.cont4 .evt_notice .note_list ul li {display:block;position:relative;padding-left:1.5rem;font-size:2rem;font-weight:100;color:#a9eb95;letter-spacing:-.4px;line-height:3.2rem;word-break:keep-all}
+.cont4 .evt_notice .note_list ul li:before {content:"-";position:absolute;left:0;font-size:2rem;font-weight:100;color:#a9eb95;letter-spacing:-.4px;line-height:3.2rem;}
+.cont4 .evt_notice .note_list ul li a {color:#a9eb95;}
+.cont4 .evt_notice .note_list ul li a:hover {text-underline-position:under;}
 
 
 
@@ -265,11 +268,15 @@
 .evtjoin_info .info__list > li:before {content:"";display:block;position:absolute;top:.1rem;left:0;width:4.4rem;height:5rem;background:url(../imgs/ico-chkbox.png) 50% 50% no-repeat;background-size:4.4rem}
 .evtjoin_info .info__list > li strong {font-weight:400}
 .evtjoin_info .info__list > li .tx_noti {display:block;margin-top:1rem;font-weight:100;font-size:1.8rem;line-height:2.6rem}
+.evtjoin_info .info__list > li .tx_noti a {color:#67685a}
 
 .subcont3 .evt_notice {padding:5rem 6.4rem;}
 .subcont3 .evt_notice .note_tit {position:relative;margin-bottom:3.2rem;padding-left:4.4rem;font-weight:200;font-size:3.5rem;line-height:4.1rem;color:#dadad9}
 .subcont3 .evt_notice .note_tit:before {content:"";position:absolute;top:.5rem;left:0;width:3.3rem;height:3.3rem;background:url(../imgs/ico-i-gray.png) 50% 50% no-repeat;background-size:3.3rem}
-.subcont3 .evt_notice .note_list ul li {display:block;font-size:2.5rem;font-weight:100;color:#c6c5c4;letter-spacing:-.4px;line-height:4.2rem}
+.subcont3 .evt_notice .note_list ul li {display:block;position:relative;padding-left:1.5rem;font-size:2.5rem;font-weight:100;color:#c6c5c4;letter-spacing:-.4px;line-height:4.2rem}
+.subcont3 .evt_notice .note_list ul li:before {content:"-";position:absolute;left:0;font-size:2.5rem;font-weight:100;color:#c6c5c4;letter-spacing:-.4px;line-height:4.2rem}
+.subcont3 .evt_notice .note_list ul li a {color:#c6c5c4;}
+.subcont3 .evt_notice .note_list ul li a:hover {text-underline-position:under;}
 
 /* 엔딩 */
 .container--end {display:block;width:192rem;height:175.3rem;background:url(../imgs/end-bg.png) top center no-repeat;background-size:192rem}
@@ -326,23 +333,23 @@
 .lay-note .lay-body .btn-next {display:block;position:relative;width:64.4rem;height:30.2rem;margin:0 auto;font-size:0;text-indent:-9999px;background:url(../imgs/lay-note-btn.png) top center;background-size:64.4rem}
 .lay-note .lay-body .btn-next .btn-link {display:block;position:absolute;top:3.2rem;left:3.9rem;width:56.2rem;height:11.8rem;}
 
-@media (max-width:750px){ 
+@media (max-width:750px){
     html {font-size:8px}
     .visual *,
     .container--end * {transition:all .05s ease-in-out !important;transition-delay:0s}
 }
-@media (max-width:720px){ 
+@media (max-width:720px){
     html {font-size:7px}
 }
-@media (max-width:640px){ 
+@media (max-width:640px){
     html {font-size:6px}
 }
-@media (max-width:480px){ 
+@media (max-width:480px){
     html {font-size:5px}
 }
-@media (max-width:360px){ 
+@media (max-width:360px){
     html {font-size:5px}
 }
-@media (max-width:320px){ 
+@media (max-width:320px){
     html {font-size:4px}
 }
